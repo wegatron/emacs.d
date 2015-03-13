@@ -19,4 +19,13 @@
    (set-selection-coding-system 'utf-8))
   (prefer-coding-system 'utf-8))
 
+;; zsw eshell clear command setting
+(defun eshell/clear ()
+  "clear the eshell buffer."
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)))
+
+(global-linum-mode 1)
+
 (provide 'init-locales)
