@@ -27,4 +27,11 @@
 
 (global-linum-mode 1)
 
+   (add-to-list 'load-path
+                "/home/wegatron/.emacs.d/elpa/yasnippet-20150212.240/")
+   (require 'yasnippet)
+   (yas-global-mode 1)
+
+
+
 (provide 'init-locales)
