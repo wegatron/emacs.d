@@ -32,6 +32,6 @@
    (require 'yasnippet)
    (yas-global-mode 1)
 
-
+(add-hook 'dired-mode-hook (lambda () (local-set-key (kbd "M-p") 'dired-up-directory) ))
 
 (provide 'init-locales)
