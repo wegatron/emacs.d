@@ -33,5 +33,14 @@
    (yas-global-mode 1)
 
 (add-hook 'dired-mode-hook (lambda () (local-set-key (kbd "M-p") 'dired-up-directory) ))
+(global-set-key (kbd "C-SPC") nil)
+(global-set-key [f12] 'compile)
+
+(add-hook 'c-mode-hook 'hs-minor-mode)
+(add-hook 'c++-mode-hook 'hs-minor-mode)
+(global-set-key (kbd "C-c =") 'hs-hide-block)
+(global-set-key (kbd "C-c -") 'hs-show-block)
+(global-set-key (kbd "C-c s") 'hs-show-all)
+(global-set-key (kbd "C-c h") 'hs-hide-all)
 
 (provide 'init-locales)
