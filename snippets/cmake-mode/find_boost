@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: find_boost
+# key: find_boost
+# --
+find_package(Boost 1.65 COMPONENTS python3 numpy3 REQUIRED)
+add_definitions(-DBOOST_SYSTEM_NO_DEPRECATED)
+add_definitions(-DBOOST_PYTHON_STATIC_LIB) # 这里必须使用静态库
+include_directories(\$\{Boost_INCLUDE_DIRS\})
+link_directories(\$\{Boost_LIBRARY_DIRS\})
+# \$\{Boost_LIBRARIES\}

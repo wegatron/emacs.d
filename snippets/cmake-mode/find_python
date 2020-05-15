@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: find_python
+# key: find_python
+# --
+# python3
+set(ENV\{PATH\} "\$ENV\{PATH\};/home/wegatron/opt/anaconda3/envs/pc_course/bin")
+find_package(PythonInterp 3 REQUIRED)
+find_package(PythonLibs 3 REQUIRED)
+include_directories(\$\{PYTHON_INCLUDE_DIRS\})
+# \$\{PYTHON_LIBRARIES\}

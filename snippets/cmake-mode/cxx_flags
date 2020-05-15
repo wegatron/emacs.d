@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cxx_flags
+# key: cxx_flags
+# --
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS_RELEASE "\$\{CMAKE_CXX_FLAGS_RELEASE\} -Wall -march=native")
+set(CMAKE_CXX_FLAGS_DEBUG "\$\{CMAKE_CXX_FLAGS_DEBUG\} -Wall")

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: find_vtk
+# key: find_vtk
+# --
+find_package(VTK REQUIRED)
+include_directories(\$\{VTK_INCLUDE_DIRS\})
+\$\{VTK_LIBRARIES\}

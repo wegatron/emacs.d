@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: debug_postfix
+# key: debug_postfix
+# --
+set(CMAKE_DEBUG_POSTFIX d)
+set(CMAKE_RELEASE_POSTFIX "")
