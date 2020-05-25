@@ -45,9 +45,13 @@
 (global-set-key (kbd "C-c h") 'hs-hide-all)
 
 (setenv "ZSW_WSP" "/media/wegatron/data/workspace")
+(load-theme 'sanityinc-solarized-light t)
+
 (defun my-c++-mode-hook ()
   (setq c-basic-offset 4)
   (c-set-offset 'substatement-open 0))
 (add-hook 'c++-mode-hook 'my-c++-mode-hook)
 (provide 'init-locales)
+
+
 ;;; init-locales.el ends here
